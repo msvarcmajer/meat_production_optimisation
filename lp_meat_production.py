@@ -36,7 +36,7 @@ prob += 0.2 * x + 0.6 * y + 0.9 * z <= S, "Potrosena svinjetina"
 prob += x >= 0, "Nenegativna količina premium salame"
 prob += y >= 0, "Nenegativna količina normalne salame"
 prob += z >= 0, "Nenegativna količina jeftine salame"
-prob += x >= U * (x + y + z), "Uvjetovani_Udio_Kvalitetne_Salame"
+prob += x >= U * (x + y + z), "Uvjetovani_Udio_Premium_Salame"
 
 # Rješavanje problema
 prob.solve()
